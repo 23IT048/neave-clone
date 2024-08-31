@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 29vh;
+    width: 100vw;
+    min-width: 320px;
+    background: linear-gradient(90deg, #fea9fe , #feffa8, #b2ffb5, #a8c6ff, #fea9fe); 
+    background-size: 500%;
+    animation: colorMovement 12s alternate infinite;
+}
+#logo{
+    width: 42vh;
+}
+main{
+    display: flex;
+    min-width: 320px;
+    justify-content: center;
+    align-items: center;
+    background-color: #323232;
+    width: 100vw;
+}
+.content{
+    display: flex;
+    width: 90vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 0vh;
+}
+a{
+    text-decoration: none;
+}
+.contentItem{
+    display: flex;
+    height: 50vh;
+    width: 40vh;
+    padding-top: 3vh;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+}
+.contentImg{
+    height: 30vh;
+    width: 30vh;
+    margin: 2vh;
+    border-radius: 15%;
+    transition: transform 0.3s ease;
+}
+.contentImg:hover{
+    transform: translateY(-1vh);
+}
+.contentTitle{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 4vh;
+    padding-top: 1vh;
+}
+.contentInfo{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 2vh;
+    text-align: center;
+    color: #b6b6b6;
+    padding: 1vh;
+}
+footer{
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1b1b1b;
+    height: 25vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    padding: 5vh;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+li{
+    margin: 3px;
+}
+li:hover{
+    text-decoration: underline;
+}
+@keyframes colorMovement {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+@media (min-width:950px){
+    footer{
+        flex-direction: row;
+    }
+}

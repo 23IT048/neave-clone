@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #000000;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#neaveButton{
+    width: 5vmin;
+    position: absolute;
+    top: 2vmin;
+    left: 2vmin;
+    border-radius: 50%;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+#neaveButton:hover{
+    background: linear-gradient(0deg, #fea9fe , #feffa8, #b2ffb5, #a8c6ff, #fea9fe);
+    background-size: 100% 500%;
+    animation: moveBackground 2s linear infinite;
+}
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+#soundButton{
+    position: absolute;
+    top: 2vmin;
+    right: 2vmin;
+    cursor: pointer;
+    opacity: 0.4;
+    border: none;
+}
+#soundButtonImg{
+    width: 5vmin;
+}
+#soundButtonImg:hover{
+    opacity: 1;
+}
+#muteButtonImg{
+    width: 3vh;
+}
+#muteButtonImg:hover{
+    opacity: 1;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    display: grid;
+    height: 76vmin;
+    width: 76vmin;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.5vmin;
+    background-color: #ffffff;
+}
+.square{
+    height: 25vmin;
+    width: 25vmin;
+    color: #ffffff;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-size: 22vmin;
+    background-color: #000;
+    border: none;
+    font-weight: 100;
+}
+.stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin: 30px;
+    width: 76vmin;
+    font-family: "Roboto", sans-serif;
+    font-size: 3vmin;
+}
+th, td{
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    padding: 0px 4vmin;
+}
+.winningLine{
+    font-weight: 500;
+}
+.faint{
+    color: rgb(128, 128, 128);
+}
+.blink{
+    animation: blinking 0.3s ease-in-out 3;
+}
+@keyframes blinking{
+    0% {color: #000}
+    100% {color: #fff}
+}
+.blinkBoard{
+    animation: blinkingBoard 0.3s ease-in-out 3;
+}
+@keyframes blinkingBoard{
+    0% {background-color: #fff}
+    100% {background-color: #000}
+}

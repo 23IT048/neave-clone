@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-Tac-Toe - Play retro Tic-Tac-Toe online for free</title>
+    <link rel="icon" href="ticTacToeFavicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <audio id="soundX" src="soundX.mp3" preload="auto"></audio>
+    <audio id="soundO" src="soundO.mp3" preload="auto"></audio>
+    <audio id="drawSound" src="drawSound.mp3" preload="auto"></audio>
+    <audio id="winSound" src="winSound.mp3" preload="auto"></audio>
+    <a href="index.html"><img src="logo2.png" alt="" id="neaveButton"></a>
+    <button id="soundButton"><img src="soundButton.png" alt="sound" id="soundButtonImg"></button>
+    <div class="container">
+        <div class="game">
+            <button class="square"></button>
+            <button class="square"></button>
+            <button class="square"></button>
+            <button class="square"></button>
+            <button class="square"></button>
+            <button class="square"></button>
+            <button class="square"></button>
+            <button class="square"></button>
+            <button class="square"></button>
+        </div>
+        <div class="stats">
+            <table>
+                <thead>
+                    <th class="playerX">PLAYER 1(X)</th>
+                    <th class="draws">TIE</th>
+                    <th class="playerO">PLAYER 2(O)</th>
+                    <!-- <th rowspan="2">
+                        <button class="numberOfPlayers">
+                        </button>
+                    </th> -->
+                </thead>
+                <tr>
+                    <td class="playerX" id="playerX">0</td>
+                    <td class="draws" id="draws">0</td>
+                    <td class="playerO" id="playerO">0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
