@@ -20,10 +20,12 @@ let playerOScore = 0;
 let drawCount = 0;
 soundButton.addEventListener("click",() => {
     if (sound) {
-        soundButton.innerHTML = '<img src="muteButton.png" alt="sound" id="muteButtonImg"></img>';
+        soundButton.setAttribute('src','soundOff.png');
+        soundButton.setAttribute('class','soundOff');
     }
     else{
-        soundButton.innerHTML = '<img src="soundButton.png" alt="sound" id="soundButtonImg"></img>';
+        soundButton.setAttribute('src','soundOn.png');
+        soundButton.setAttribute('class','soundOn');
     }
     sound = !sound;
 });

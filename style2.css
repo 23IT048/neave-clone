@@ -12,10 +12,10 @@ body{
     align-items: center;
 }
 #neaveButton{
-    width: 5vmin;
+    width: 5vh;
     position: absolute;
-    top: 2vmin;
-    left: 2vmin;
+    top: 2vh;
+    left: 2vh;
     border-radius: 50%;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
@@ -34,23 +34,21 @@ body{
 }
 #soundButton{
     position: absolute;
-    top: 2vmin;
-    right: 2vmin;
+    top: 2vh;
+    right: 2vh;
     cursor: pointer;
     opacity: 0.4;
     border: none;
 }
-#soundButtonImg{
-    width: 5vmin;
-}
-#soundButtonImg:hover{
+#soundButton:hover{
     opacity: 1;
 }
-#muteButtonImg{
-    width: 3vh;
+.soundOn{
+    width: 5vh;
 }
-#muteButtonImg:hover{
-    opacity: 1;
+.soundOff{
+    margin-right: 2.3vh;
+    width: 2.6vh;
 }
 .container{
     display: flex;
